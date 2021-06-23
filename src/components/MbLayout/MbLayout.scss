@@ -1,0 +1,38 @@
+$mobile: '512px';
+$tablet: '830px';
+$desktop: '1020px';
+$big-desktop: '1220px';
+$back-color: #fabada;
+
+.mb-layout {
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 290px;
+
+    @media screen and (min-width: $mobile) {
+        max-width: 600px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1200px;
+    }
+}
+
+.content {
+    text-align: justify;
+    background-color: $back-color;
+
+    &.-white {
+        background-color: #FFF;
+    }
+}
+
+.mb-layout-item {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+}
